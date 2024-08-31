@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoicify</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <img src="LogoSample_ByTailorBrands.jpg" alt="Invoicify Logo" class="logo">
+            <div class="header-content">
+                <h1>Managing your bills and invoices made easy</h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="contact-btn" onclick="toggleContact()">Contact</button>
+            <button class="about-btn" onclick="toggleAbout()">About</button>
+            <span class="login-btn" onclick="toggleLoginForm()">Login</span>
+            <button class="signup-btn" onclick="showSignUpForm()">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Hidden Menus -->
+    <div id="menu" class="menu hidden">
+        <ul>
+            <li onclick="navigate('home')">Home</li>
+            <li onclick="toggleAbout()">About</li>
+            <li onclick="toggleContact()">Contact</li>
+            <li onclick="toggleLoginForm()">Login</li>
+            <li onclick="logout()">Log Out</li>
+        </ul>
+    </div>
+
+    <div id="contact-info" class="info-box hidden">
+        <p>Customer Care: 123-456-7890</p>
+        <p>Email: support@invoicify.com</p>
+        <button onclick="toggleContact()">Close</button>
+    </div>
+
+    <div id="about-info" class="info-box hidden">
+        <p>Invoicify is your one-stop solution for managing bills and invoices efficiently.</p>
+        <button onclick="toggleAbout()">Close</button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="site-header">
+            <div class="site-name">
+                <span class="site-name-part1">IN</span><span class="site-name-part2">VOICIFY</span>
+            </div>
+        </div>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="login-form hidden">
+            <form>
+                <label for="userid">User ID:</label>
+                <input type="text" id="userid" name="userid" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Submit</button>
+                <button type="button" class="forgot-btn">Forget Password?</button>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="sign-up-form" class="sign-up-form hidden">
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="username" required>
+                <label for="signup-mobile">Mobile Number:</label>
+                <input type="tel" id="signup-mobile" name="mobile" required>
+                <label for="signup-email">Email Address:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="signup-gender">Gender:</label>
+                <select id="signup-gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="signup-userid">User ID:</label>
+                <input type="text" id="signup-userid" name="userid" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="carousel">
+            <div class="slides">
+                <img src="Training-and-tutoring-1-564x804.png" alt="Invoice of Paying Tuition Fee">
+                <img src="University-Fees-Invoice-1.webp" alt="Tracking Records of Invoices">
+                <img src="bbps-bill-payment-software-500x500.jpg.webp" alt="User-Friendly and Easy to Manage Website">
+            </div>
+        </div>
+
+        <!-- Key Features Section -->
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Efficient bill management</li>
+                <li>Track your invoices in real-time</li>
+                <li>User-friendly interface</li>
+                <li>Secure and private</li>
+                <li>24/7 customer support</li>
+            </ul>
+        </section>
+
+        <!-- Value Proposition Section -->
+        <section class="value-proposition">
+             <h2>Why Choose Invoicify?</h2>
+             <p>Invoicify is more than just an invoicing tool; it’s a comprehensive solution designed to simplify your financial management. Our platform integrates seamlessly with your existing workflows, providing a user-friendly interface that allows for quick and easy invoice creation. With real-time tracking and customizable features, Invoicify ensures that you stay on top of your financial obligations without the hassle. Whether you're managing a single invoice or handling multiple accounts, our system is built to scale with your needs, offering flexibility and efficiency in every aspect of your billing process.</p>
+
+             <p>Our commitment to excellence goes beyond just functionality. We prioritize your security and privacy by implementing advanced encryption protocols and strict data protection measures. At Invoicify, we believe in providing not just a tool, but a reliable partner that supports your business growth and financial accuracy. Our dedicated support team is here to help you navigate any challenges and maximize the benefits of our platform. Choose Invoicify for a solution that combines innovation, security, and exceptional customer service to enhance your invoicing experience.</p>
+         </section>
+
+        <!-- Footer Contact Section -->
+        <footer>
+            <h2>Contact</h2>
+            <p>Customer Care: 123-456-7890</p>
+            <p>Email: support@invoicify.com</p>
+            <p>Thank you for using Invoicify!</p>
+        </footer>
+    </main>
+</body>
+</html>

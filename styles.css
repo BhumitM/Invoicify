@@ -1,0 +1,333 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hidden:not(.hidden) {
+    opacity: 1;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, purple, blue);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-btn, .about-btn, .signup-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    border-radius: 5px;
+}
+
+.login-btn {
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+
+/* Menu Styles */
+.menu {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Info Box Styles */
+.info-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.info-box:not(.hidden) {
+    opacity: 1;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.site-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.site-name-part1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.site-name-part2 {
+    color: blue;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Login Form Styles */
+.login-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.login-form:not(.hidden) {
+    opacity: 1;
+}
+
+.login-form label, .login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    padding: 8px;
+}
+
+.forgot-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, red, orange);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Sign Up Form Styles */
+.sign-up-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sign-up-form:not(.hidden) {
+    opacity: 1;
+}
+
+.sign-up-form label, .sign-up-form input, .sign-up-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sign-up-form input, .sign-up-form select {
+    padding: 8px;
+}
+
+/* Carousel Styles */
+.carousel {
+    margin: 20px auto;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slides img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    padding: 20px;
+    text-align: left;
+}
+
+.features h2 {
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Value Proposition Section */
+.value-proposition {
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 10px;    /* Rounded corners */
+    background: linear-gradient(to right, #f0f4f8, #e2e8f0); /* Light blended background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+}
+
+.value-proposition h2 {
+    margin-top: 0;
+    color: #333; /* Darker color for the heading */
+}
+
+.value-proposition p {
+    color: #666; /* Slightly lighter color for the text */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+/* Invoice Generator Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#invoice-form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#invoice-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#invoice-form input, #invoice-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#invoice-form button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, red, orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#invoice-form button:hover {
+    background: linear-gradient(to right, darkred, darkorange);
+}
+
+#invoice-result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
